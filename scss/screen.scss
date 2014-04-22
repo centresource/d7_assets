@@ -1,8 +1,8 @@
-// Wysiwyg styles - have to add to wysiwyg format manually
-// 1. Navigate to Configuration > Content Authoring > Wysiwyg Profiles
-// 2. Edit Full HTML - under CSS, select define CSS
-// 3. In CSS Path, enter %b%t/assets/css/editor.css
-
+/*
+ * This file should only comprise of @imports.
+ * Place all styles in appropriately named files.
+ * See the ToC in _application.scss
+ */
 
 
 
@@ -21,15 +21,17 @@
 // @import "base/mixins/base";
 @import "base/utilities";
 @import "base/typography";
+@import "base/forms";
 @import "base/buttons";
 @import "base/tables";
 @import "base/lists";
 @import "base/fonts";
 @import "base/library";
+@import "base/application";
 
 
 
 
-/* Fonts (pulled in separately for wysiwyg)
+/* Pages
  * -----------------------------------------------------------------------------*/
-// @import url(http://fonts.googleapis.com/css?family=Esteban);
+@import "page/front";

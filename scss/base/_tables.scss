@@ -1,0 +1,13 @@
+/* Tables */
+table {
+  width: 100%;
+}
+table, thead, td, tr, th {
+  border: none;
+}
+tr {
+  border-bottom: 1px solid #ccc;
+}
+td, th {
+  padding: 7px 20px;
+}

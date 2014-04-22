@@ -1,0 +1,27 @@
+// Colors
+$base: #333;
+
+// Common Mixins
+@mixin sprite($pos) {
+  background: url(../images/sprite.png) no-repeat scroll 0 0;
+  background-position: $pos;
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+@mixin btn {
+  background-color: #ccc;
+  color: #fff;
+  display: block;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: 7px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include transition (all .3s);
+  &:hover {
+    background-color:#aaa;
+  }
+}

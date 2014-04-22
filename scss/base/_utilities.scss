@@ -1,0 +1,18 @@
+//
+//  Drupal-specific defaults
+//
+.sidebar .block {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+// responsive images, videos
+img, object, video {
+  height: auto;
+  max-width: 100%;
+}
+// Overrides for Media module to make fitVids work
+// .media-youtube-outer-wrapper, .media-youtube-preview-wrapper, .media-vimeo-outer-wrapper, .media-vimeo-preview-wrapper {
+//     height: auto !important;
+//     width: auto !important;
+// }

@@ -1,0 +1,27 @@
+// Default view list styles - mothership may override these classes by default
+.view-content ul, .view-content ol {
+  margin: 0;
+  padding: 0;
+}
+.item-list ul li.views-row, .views-row {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  position: relative;
+}
+// tabs
+ul.primary {
+  height: 23px;
+  margin-left: 0;
+  padding-left: 1%;
+  li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    a {
+      border-radius: 3px 3px 0 0;
+      font-size: .8em;
+      padding: 7px;
+    }
+  }
+}
