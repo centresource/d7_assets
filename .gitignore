@@ -42,6 +42,10 @@ Thumbs.db
 ##########
 .sass-cache
 
+# NPM #
+##########
+node_modules
+
 # Pantheon files directory symlink #
 ####################################
 sites/default/files
