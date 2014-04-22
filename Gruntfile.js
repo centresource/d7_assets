@@ -3,19 +3,19 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     watch: {
       sass: {
-        files: ['assets/_scss/**/*.{scss,sass}'],
+        files: ['_scss/**/*.{scss,sass}'],
         tasks: ['sass:dist']
       },
       coffee: {
-        files: ['assets/_coffee/**/*.coffee'],
+        files: ['_coffee/**/*.coffee'],
         tasks: ['coffee:dist']
       },
       livereload: {
         files: [
           '*.php',
-          'assets/js/**/*.{js,json}',
-          'assets/css/*.css',
-          'assets/img/**/*.{png,jpg,jpeg,gif,webp,svg}'
+          'js/**/*.{js,json}',
+          'css/*.css',
+          'img/**/*.{png,jpg,jpeg,gif,webp,svg}'
         ],
         options: {
           livereload: true
@@ -26,27 +26,20 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'assets/_scss',
+          cwd: '_scss',
           src: '*.{scss,sass}',
-          dest: 'assets/css',
+          dest: 'css',
           ext: '.css'
         }]
       }
     },
     coffee: {
       dist: {
-        files: {
-          'assets/js/app.js': 'assets/coffee/app.coffee',
-          'assets/js/front.js': 'assets/coffee/front.coffee',
-          'assets/js/members.js': 'assets/coffee/members.coffee',
-          'assets/js/checkout.js': 'assets/coffee/checkout.coffee',
-          'assets/js/sponsors.js': 'assets/coffee/sponsors.coffee'
-        }
         files: [{
           expand: true,
-          cwd: '<%%= yeoman.app %>/assets/_coffee',
+          cwd: '_coffee',
           src: '**/*.coffee',
-          dest: 'assets/js',
+          dest: 'js',
           ext: '.js'
         }]
       }
@@ -55,9 +48,9 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/img',
+          cwd: 'img',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'assets/img'
+          dest: 'img'
         }]
       }
     }
